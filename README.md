@@ -56,3 +56,30 @@ src/
 
 📄 Лицензия
 MIT — свободно используйте в любых проектах.
+
+📡 API Эндпоинты
+Метод	Путь	Описание
+GET	/api/components	Список компонентов (с пагинацией)
+GET	/api/components/:id	Конкретный компонент
+GET	/api/components/count	Количество компонентов
+GET	/api/components/categories/list	Список категорий
+⏰ Автоматическая генерация
+Каждую ночь в 3:00 запускается cron-задача, которая:
+
+Запрашивает у Grok API 10 новых компонентов
+
+Сохраняет их в базу данных
+
+Обновляет sitemap
+
+🛠 Технологии
+Node.js + Express
+
+PostgreSQL
+
+node-cron
+
+Axios
+
+🌐 Ссылки
+Сайт: https://uifree.ru
