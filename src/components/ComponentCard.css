@@ -1,0 +1,95 @@
+.component-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.preview {
+  min-height: 220px;
+  padding: 32px 24px;
+  background: color-mix(in srgb, var(--bg-primary) 92%, var(--accent) 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;          /* ← критично! */
+  position: relative;
+  width: 100%;
+  clip-path: inset(0);       /* дополнительная защита */
+}
+
+/* защита от вылезающего контента */
+.preview > div {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  padding: 20px;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.title:hover {
+  color: var(--accent);
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: color-mix(in srgb, var(--bg-primary) 90%, var(--accent) 10%);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+}
+
+.copy-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: color-mix(in srgb, var(--bg-secondary) 80%, var(--accent) 20%);
+  border: 1px solid var(--border);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.copy-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.1);
+}
+
+.copy-btn.copied {
+  background: #10b981;
+  border-color: #10b981;
+}

@@ -1,0 +1,132 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 60px 0 30px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.footer-section h3 .highlight {
+  color: var(--accent);
+}
+
+.footer-section h4 {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-section p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent);
+  padding-left: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-muted);
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: color-mix(in srgb, var(--bg-primary) 90%, var(--accent) 10%);
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.badge svg {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-badges {
+    justify-content: center;
+  }
+}
