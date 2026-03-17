@@ -1,16 +1,58 @@
-# React + Vite
+# UIfree Frontend 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Фронтенд для библиотеки бесплатных UI-компонентов, сгенерированных искусственным интеллектом Grok.
 
-Currently, two official plugins are available:
+## 🌟 Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React + Vite** — современный и быстрый стек
+- **Тёмная/светлая тема** — с переключением через контекст
+- **Infinite scroll** — компоненты подгружаются автоматически
+- **Shadow DOM** — изоляция CSS каждого компонента
+- **Адаптивный дизайн** — работает на всех устройствах
+- **SEO-оптимизирован** — sitemap, мета-теги, robots.txt
 
-## React Compiler
+## 📦 Установка и запуск
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Клонировать репозиторий
+git clone https://github.com/ed-90/uifree-frontend.git
 
-## Expanding the ESLint configuration
+# Перейти в папку
+cd uifree-frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Установить зависимости
+npm install
+
+# Запустить в режиме разработки
+npm run dev
+
+# Собрать для продакшена
+npm run build
+🛠 Технологии
+React 19
+
+Vite 8
+
+React Router DOM 7
+
+Axios
+
+Lucide React (иконки)
+
+React Intersection Observer (infinite scroll)
+
+📁 Структура проекта
+text
+src/
+├── components/     # Переиспользуемые компоненты
+├── pages/          # Страницы (Home, About, Component)
+├── api/            # Запросы к бэкенду
+├── context/        # Контекст темы
+├── styles/         # Глобальные стили
+└── utils/          # Вспомогательные функции
+🔗 API
+Фронтенд общается с бэкендом по адресу https://uifree.ru/api.
+Документация API доступна на сайте.
+
+📄 Лицензия
+MIT — свободно используйте в любых проектах.
